@@ -30,7 +30,7 @@ SECRET_KEY = 'ze&lt2#@384zvupcm68gy0yxd2qsx*)g9g7!kz$wp1(rhulais'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['188.225.18.86']
 
 
 # Application definition
