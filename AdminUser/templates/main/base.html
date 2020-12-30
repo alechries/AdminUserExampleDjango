@@ -2,17 +2,33 @@
 
 <html>
   <head>
-    <title>Blog</title>
+    <title>Bro, it's blog</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
     <link href="{% static 'main/css/base.css' %}" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1><a href="{% url 'home' %}">Blog</a></h1>
-    </header>
     <div>
-      {% block content %}
-      {% endblock content %}
+      <header>
+        <div class="nav-left">
+          <h1><a href="{% url 'home' %}">Bro, this is my blog</a></h1>
+        </div>
+        <div class="nav-right">
+          <a href="{% url 'home' %}">+ New Post (not implemented)</a>
+        </div>
+      </header>
+      {% if user.is_authenticated %}
+        <p>Hi {{ user.username }}!</p>
+        <p><a href="{% url 'logout' %}">Log out</a></p>
+      {% else %}
+        <p>You are not logged in.</p>
+        <a>You can </a>
+        <a href="{% url 'login' %}">Log In</a>
+        <a> or </a>
+        <a href="{% url 'signup' %}">Sign Up</a>
+      {% endif %}
+         <hr />
+    {% block content %}
+    {% endblock content %}
     </div>
   </body>
 </html>
