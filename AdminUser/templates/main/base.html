@@ -5,7 +5,7 @@
     <title>Bro, it's blog</title>
     <link href="{% static 'main/css/base.css' %}" rel="stylesheet">
   </head>
-  <body>
+  <body bgcolor="#E0FFFF">
     <div>
       <header>
         <div class="nav-left">
@@ -15,16 +15,26 @@
           <a href="{% url 'home' %}">+ New Post (not implemented)</a>
         </div>
       </header>
-      {% if user.is_authenticated %}
+        {% if user.is_authenticated %}
         <p>Hi {{ user.username }}!</p>
-        <p><a href="{% url 'logout' %}">Log out</a></p>
-      {% else %}
-        <p>You are not logged in.</p>
-        <a>You can </a>
-        <a href="{% url 'login' %}">Log In</a>
-        <a> or </a>
-        <a href="{% url 'signup' %}">Sign Up</a>
-      {% endif %}
+        <div>
+          <a href="{% url 'logout' %}">
+            <button class="button-one">Log Out</button>
+          </a>
+        </div>
+        {% else %}
+          <p>You are not logged in.</p>
+          <div>
+            <a href="{% url 'login' %}">
+              <button class="button-one">Log In</button>
+            </a>
+          </div>
+          <div>
+            <a href="{% url 'signup' %}">
+              <button class="button-one">Sign Up</button>
+            </a>
+          </div>
+        {% endif %}
          <hr />
     {% block content %}
     {% endblock content %}

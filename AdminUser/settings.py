@@ -85,10 +85,18 @@ WSGI_APPLICATION = 'AdminUser.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'AdminUserExampleDjango',
+        'USER': 'AdminUserExampleDjango',
+        'PASSWORD': 'admin',
+        'HOST': '188.225.18.86',
+        'PORT': '5432',
     }
 }
+
+
 
 
 # Password validation
@@ -129,6 +137,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(PROJECT_ROOT, 'static')]
+
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
