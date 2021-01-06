@@ -87,12 +87,22 @@ header h1 a {
 }
 
 .nav-link{
- margin-right: 1em !important;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  margin-right: 1em !important;
 }
 
 .nav-link:hover{
- background: #f4f4f4;
- color: #f97300;
+ background: rgb(232,95,76);
+}
+
+.nav-link:active{
+ background: rgb(232,95,76);
+ color: rgb(152,15,0);
 }
 
 .navbar-collapse{
