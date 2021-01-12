@@ -17,7 +17,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-PROJECT_ROOT = os.path.dirname(__file__)
+PROJECT_ROOT = Path(__file__).resolve(strict=True).parent
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
 
@@ -141,6 +141,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(PROJECT_ROOT, 'static')]
 
+MEDIA_ROOT = PROJECT_ROOT / 'media'
+MEDIA_URL = '/media/'
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
