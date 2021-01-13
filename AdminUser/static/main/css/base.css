@@ -202,6 +202,7 @@ footer {
     .card__one-details{
         height: auto;
         width: 40%;
+        margin: 50px;
     }
     .card__one-btn{
         height: 25px;
