@@ -170,8 +170,6 @@ footer {
 
 .card__one-details{
     position: relative;
-    height: auto;
-    width: 50%;
     background-color: #FFF;
     border-radius: 5px;
     display: flex;
@@ -201,6 +199,10 @@ footer {
         width: 15%;
         margin: 15px;
     }
+    .card__one-details{
+        height: auto;
+        width: 40%;
+    }
     .card__one-btn{
         height: 25px;
         font-size: 100%;
@@ -229,6 +231,13 @@ footer {
         width: 90%;
         margin: 60px 0px;
     }
+
+    .card__one-details{
+        height: auto;
+        width: 90%;
+        font-size: 250%;
+    }
+
     .card__title{
         font-size: 300%;
     }
