@@ -161,6 +161,7 @@ footer {
 
 .card__one-btn:hover{
     background-color: #A9A9A9;
+    color: white;
 }
 
 .card__text{
