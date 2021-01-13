@@ -1,0 +1,187 @@
+.navbar{
+ background: #898176;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  background: #898176;
+}
+
+
+.footer__text {
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+}
+
+.navbar-collapse{
+ justify-content: flex-end;
+}
+
+.nav-link , .navbar-brand{
+ color: #f4f4f4;
+ cursor: pointer;
+}
+
+.nav-link{
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: grey; /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  margin-right: 1em !important;
+  font-size: 20;
+}
+
+.nav-link:hover {
+    color: #fff; /* цвет текста */
+}
+
+.bg_red {
+    background: #D86248;
+}
+
+.bg_red:hover {
+    background: #E67157;
+}
+
+.bg_green {
+    background: #6BBD68;
+}
+
+.bg_green:hover {
+    background: #7DCF7A;
+}
+
+.bg_yellow {
+    background: #E0C54A;
+}
+
+.bg_yellow:hover {
+    background: #EED460;
+}
+
+.bg_blue {
+    background: #5A8FF3;
+}
+
+.bg_blue:hover {
+    background: #6EA0FF;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position: relative;
+}
+
+.custom_blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__one{
+    position: relative;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.card__one-btn{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    border-radius: 15px;
+    outline: none;
+    background-color: #808080;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    position: absolute;
+}
+
+.card__one-btn:hover{
+    background-color: #A9A9A9;
+}
+
+.card__text{
+    text-align: center;
+}
+
+.card__one-details{
+    position: relative;
+    height: auto;
+    width: 50%;
+    background-color: #FFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar{
+        font-size: 200%;
+    }
+    .custom_blog{
+        flex-direction: row;
+        margin: 75 5px;
+    }
+    .card__one{
+        width: 15%;
+        margin: 15px;
+    }
+    .card__one-btn{
+        height: 25px;
+        font-size: 100%;
+        bottom: -12px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .navbar{
+        font-size: 600%;
+    }
+    .custom_blog{
+        flex-direction: column;
+        margin: 150 5px;
+    }
+    .card__one{
+        width: 90%;
+        margin: 60px 0px;
+    }
+    .card__title{
+        font-size: 300%;
+    }
+    .card__text{
+        font-size: 200%;
+    }
+    .card__one-btn{
+        height: 70px;
+        font-size: 250%;
+        bottom: -65px;
+    }
+}
