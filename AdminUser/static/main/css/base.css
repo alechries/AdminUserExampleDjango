@@ -97,6 +97,11 @@ footer {
     margin: 5 15px;
 }
 
+.category-buttons:hover {
+    background-color: #00b3b3;
+    color: white;
+}
+
 .back-btn {
     outline: none;
     background-color: #008080;
