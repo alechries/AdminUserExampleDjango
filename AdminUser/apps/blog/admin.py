@@ -8,7 +8,7 @@ class DontLog:
 
 
 class PostAdmin(DontLog, admin.ModelAdmin):
-    list_display = ('author', 'category', 'pub_date', 'image', 'body_preview')
+    list_display = ('title', 'author', 'category', 'pub_date', 'image', 'body_preview')
 
 
 class CategoryAdmin(DontLog, admin.ModelAdmin):
