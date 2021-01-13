@@ -26,6 +26,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ze&lt2#@384zvupcm68gy0yxd2qsx*)g9g7!kz$wp1(rhulais'
+GOOGLE_RECAPTCHA_SECRET_KEY = '6LeZ_ykaAAAAAIxV81WHxrrfZvxeI0JWdf00vxaW'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
