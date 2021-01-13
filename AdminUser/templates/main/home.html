@@ -2,7 +2,13 @@
 
 {% block content %}
 
-{% for post in object_list %}
+<div class="categories">
+{% for category in categories %}
+ <a href="{% url 'post_by_category' pk=category.id %}" class="category-buttons">{{ category.name }}</a>
+{% endfor %}
+</div>
+
+{% for post in posts %}
 
  <div class="card__one">
   <div class="card-img">
@@ -16,4 +22,5 @@
  </div>
 
 {% endfor %}
+
 {% endblock content %}

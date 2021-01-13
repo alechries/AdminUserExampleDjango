@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar{
  background: #898176;
 }
@@ -74,12 +78,42 @@ footer {
     background: #6EA0FF;
 }
 
+.categories {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-buttons {
+    outline: none;
+    background-color: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5 15px;
+}
+
+.back-btn {
+    outline: none;
+    background-color: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5 15px;
+}
+
 .card-body {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1.25rem;
     display: flex;
+    padding: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: left;
@@ -109,7 +143,6 @@ footer {
     display: flex;
     justify-content: center;
     width: 75%;
-    border-radius: 15px;
     outline: none;
     background-color: #808080;
     border: none;
@@ -150,6 +183,14 @@ footer {
         flex-direction: row;
         margin: 75 5px;
     }
+    .categories {
+        margin: 25 350;
+    }
+    .category-buttons {
+        width: 200px;
+        height: 40px;
+        font-size: 25px;
+    }
     .card__one{
         width: 15%;
         margin: 15px;
@@ -158,6 +199,7 @@ footer {
         height: 25px;
         font-size: 100%;
         bottom: -12px;
+        border-radius: 15px;
     }
 }
 
@@ -168,6 +210,14 @@ footer {
     .custom_blog{
         flex-direction: column;
         margin: 150 5px;
+    }
+    .categories {
+        margin: 0 0;
+    }
+    .category-buttons {
+        width: 400px;
+        height: 60px;
+        font-size: 37px;
     }
     .card__one{
         width: 90%;
@@ -180,8 +230,9 @@ footer {
         font-size: 200%;
     }
     .card__one-btn{
-        height: 70px;
+        height: 60px;
         font-size: 250%;
-        bottom: -65px;
+        bottom: -45px;
+        border-radius: 30px;
     }
 }
