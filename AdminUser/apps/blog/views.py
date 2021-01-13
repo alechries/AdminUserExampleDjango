@@ -7,7 +7,7 @@ from .forms import PostForm
 
 def post_list(request):
     categories = Category.objects.all()
-    posts = Post.objects.filter(pub_date__lte=timezone.datetime.now()).order_by('pub_date')
+    posts = Post.objects.filter(pub_date__lte=timezone.datetime.now()).order_by('-pub_date')
 
     return render(request, 'main/home.html', {'posts': posts, 'categories': categories})
 
@@ -15,7 +15,7 @@ def post_list(request):
 def post_list_by_category(request, pk):
     categories = Category.objects.all()
     category = get_object_or_404(Category, pk=pk)
-    posts = Post.objects.filter(category=category).order_by('pub_date')
+    posts = Post.objects.filter(category=category).order_by('-pub_date')
     return render(request, 'main/home.html', {'posts': posts, 'categories': categories})
 
 
